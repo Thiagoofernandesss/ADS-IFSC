@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML 5</title>
+</head>
+<body>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+
+    <!--colocando só um tipo de video
+  <p>Esse vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midea/meu-video.mp4" width="500" controls></video>
+    -->
+  
+    <!--Dicas: colocar todas a formas-->
+
+    <video controls>
+        <source src="midea/meu-Video.m4v" type="video/mp4">
+        <source src="midea/meu-Video.webm" type="video/webm">
+        <source src="midea/meu-video.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <!--Copiar código do youtube compartilhar-> compartilhar-> incoporar-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2iaPuUFIyMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body> 
+</html>
