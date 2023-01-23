@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <p>Valor 1: <input type="number" id="innumero1"></p>
+    <p>Valor 2: <input type="number" id="innumero2"></p>
+    
+
+    <p>
+        Operações:
+    <input type="button" id="soma" value="Soma" onclick="soma()">
+    <input type="button" value="Subtração"onclick="subtrai()">
+    <input type="button" value="Multiplicação"onclick="multiplica()">
+    <input type="button" value="Divisão" onclick="divide()">   
+    <input type="button" value="Limpar" onclick="limpar()">   
+
+    </p>
+    
+    <p id="outresposta"></p>
+
+    <script>
+        function soma()
+        {
+            var numero1=Number(document.getElementById("innumero1").value);
+            var numero2=Number(document.getElementById("innumero2").value);
+            var resposta=document.getElementById("outresposta");
+            var conta=Number(numero1+numero2);
+            resposta.textContent=numero1+" + "+numero2+" = " +conta;
+        }
+
+        function subtrai()
+        {
+            var numero1=Number(document.getElementById("innumero1").value);
+            var numero2=Number(document.getElementById("innumero2").value);
+            var resposta=document.getElementById("outresposta");
+            var conta=Number(numero1-numero2);
+            resposta.textContent=numero1+" - "+numero2+" = "+conta;
+        }
+
+        function multiplica()
+        {
+            var numero1=Number(document.getElementById("innumero1").value);
+            var numero2=Number(document.getElementById("innumero2").value);
+            var resposta=document.getElementById("outresposta");
+            var conta=Number(numero1*numero2);
+            resposta.textContent=numero1+" X "+numero2+" = "+conta;
+        }
+
+        function divide()
+        {
+            var numero1=Number(document.getElementById("innumero1").value);
+            var numero2=Number(document.getElementById("innumero2").value);
+            var resposta=document.getElementById("outresposta");
+            var conta=Number(numero1/numero2);
+            resposta.textContent=numero1+" ÷ " +numero2+" = "+conta;
+        }
+
+        function limpar()
+        {
+            with (document) 
+            {
+                getElementById("innumero1").value = "";
+                getElementById("innumero2").value = "";
+                getElementById("outresposta").value = "";
+            }
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>

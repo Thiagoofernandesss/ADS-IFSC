@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular o dobro</title>
+</head>
+<body>
+    <h1>Calculando o dobro</h1>
+
+    <p>Digite o número: <input type="number" id="numero"></p>
+    <p><input type="button" id="dobro" value="Calcular" onclick="calculo()"></p>
+    <p id="outresposta"></p>
+
+    <script>
+        function calculo()
+        {
+            var numero=document.getElementById("numero").value;
+            var resposta=document.getElementById("outresposta")
+            var conta=numero*2;
+
+            resposta.textContent="Dobro: "+conta.toFixed(0)
+        }
+    </script>
+
+
+  
+
+
+    <script>
+    
+    </script>
+</body>
+</html>

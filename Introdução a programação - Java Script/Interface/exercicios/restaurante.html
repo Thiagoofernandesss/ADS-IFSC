@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante JS</title>
+</head>
+<body>
+    <h1>Restaurante</h1>
+
+    <p>Buffet a quilo: <input type="number" id="inpreco"></p>
+    <p>Consumo cliente: (gr) <input type="number" id="inpeso"></p>
+    <p><input type="button" id="btcalcula" value="Calcular" onclick="calcular()"></p>
+    <p id="outresposta"></p>
+   
+    <script>
+        function calcular()
+        {
+            var inpreco=document.getElementById("inpreco").value;
+            var inpeso=document.getElementById("inpeso").value;
+            var outresposta=document.getElementById("outresposta")
+
+            var valorconta=(inpreco/1000)*inpeso;
+            outresposta.textContent="Valor a paragar R$"+valorconta.toFixed(2)
+        }
+    </script>
+
+</body>
+</html>

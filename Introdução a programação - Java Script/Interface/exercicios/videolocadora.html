@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video locadora</title>
+</head>
+<body>
+    <h1>Video locadora</h1>
+    <p>Titulo do filme <input type="text" id="nfilme"></p>
+    <p>Duraçao (min):<input type="number" id="duracao"></p>
+    <p><input type="button" id="converte" value="Converter horas em minutos" onclick="conversor()"></p>
+    <p id="outresposta"></p>
+
+    <script>
+        function conversor()
+        {
+            var nomedofilme=document.getElementById("nfilme").value;
+            var duracao=document.getElementById("duracao").value;
+            var resposta=document.getElementById("outresposta")
+
+            var calculoH=Math.trunc(duracao/60); //math trun: descarta casas depois da virgila
+            var calculoM=duracao%60;
+
+            resposta.textContent="O filme "+nomedofilme+" possui "+calculoH+" hora(s) e "+calculoM+" minutos";
+        }
+
+    </script>
+</body>
+</html>
