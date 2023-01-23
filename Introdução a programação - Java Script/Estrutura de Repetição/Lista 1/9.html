@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorial</title>
+</head>
+<body>
+    <script>
+        var numero,produto,i;
+
+        for(numero=1;numero<=10;numero++)
+        {
+            if(numero%2==1)
+            {
+                produto=1
+                for(i=numero;i>1;i--)
+                {
+                    produto=produto*i
+                }
+                document.write("<br> Fatorial de ",numero," : ",produto)
+            }
+        }
+    </script>
+</body>
+</html>
+

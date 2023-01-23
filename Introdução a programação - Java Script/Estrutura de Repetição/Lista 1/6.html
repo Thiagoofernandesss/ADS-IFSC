@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+    <script>
+        var nota,soma,cont,media;
+        soma=0
+        nota=0
+        cont=0
+        media=0
+
+        while(nota!=99)
+        {
+            nota=Number(window.prompt("Digite a nota"))
+
+            if(nota!=99)
+            {
+                soma=nota+soma
+                cont=1+cont
+                media=soma/cont
+            }
+        }
+        document.write("Quantidade de nota: ",cont,"<br>Média: ",media)
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+</head>
+<body>
+    <script>
+        var compra,venda,Estoque;
+
+        Estoque=10;
+ 
+
+        for(i=1;i<=3;i++)
+        {
+            compra=Number(window.prompt("Peças compradas"));
+            venda=Number(window.prompt("Peças Vendidas"));
+            Estoque=Estoque+compra-venda
+            document.write("<br> Saldo do Mês: ",Estoque)
+        }
+
+        document.write("<br> Saldo Final: ",Estoque)
+    </script>
+</body>
+</html>
